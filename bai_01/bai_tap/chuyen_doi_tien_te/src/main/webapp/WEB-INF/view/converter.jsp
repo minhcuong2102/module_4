@@ -17,6 +17,7 @@
     <label>Rate: </label>
     <input name="rate" value="23000" type="text" readonly>
     <input type="submit" value="Convert">
+    <h2>Result: ${result} VNĐ</h2>
 </form>
 </body>
 </html>

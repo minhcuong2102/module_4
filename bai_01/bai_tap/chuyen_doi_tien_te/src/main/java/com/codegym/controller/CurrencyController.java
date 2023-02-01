@@ -14,8 +14,8 @@ public class CurrencyController {
     }
     @PostMapping(value = "chuyen-doi")
     public String convert(@RequestParam String usd, String rate, Model model){
-        double result = Double.parseDouble(usd) * Double.parseDouble(rate);
+        int result = (int)(Double.parseDouble(usd) * Double.parseDouble(rate));
         model.addAttribute("result", result);
-        return "result";
+        return "converter";
     }
 }
