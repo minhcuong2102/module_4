@@ -17,7 +17,8 @@
     <input name="eng" placeholder="Nhập từ tiếng Anh" type="text">
     <label>Tiếng Việt </label>
     <input name="vie" type="text">
-    <input type="submit" value="translate">
+    <input type="submit" value="Translate">
+    <h2>Kết quả: ${result}</h2>
 </form>
 </body>
 </html>
