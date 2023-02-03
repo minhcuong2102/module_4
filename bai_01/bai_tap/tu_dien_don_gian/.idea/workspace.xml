@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db4b658-f069-467c-9181-ae1f9ffc44a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/email-validate-maven.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/src/main/webapp/WEB-INF/configs/spring-config-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/src/main/webapp/WEB-INF/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/.idea/modules/email-validate-gradle.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/src/main/java/com/codegym/config/UTF8Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/src/main/java/com/codegym/controller/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/src/main/webapp/WEB-INF/view/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-gradle/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management" afterDir="false" />
     </list>
@@ -69,7 +72,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/codegym/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -165,6 +168,7 @@
       <workItem from="1675152324196" duration="822000" />
       <workItem from="1675209760608" duration="701000" />
       <workItem from="1675247589831" duration="4229000" />
+      <workItem from="1675420326361" duration="840000" />
     </task>
     <servers />
   </component>

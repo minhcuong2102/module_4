@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9127b52a-13d8-4d27-abe1-ba00051d6d7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../tu_dien_don_gian/build/classes/java/main/com/codegym/controller/TranslateController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tu_dien_don_gian/src/main/java/com/codegym/config/UTF8Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tu_dien_don_gian/src/main/java/com/codegym/controller/TranslateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../tu_dien_don_gian/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tu_dien_don_gian/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tu_dien_don_gian/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tu_dien_don_gian/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../tu_dien_don_gian/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tu_dien_don_gian/src/main/webapp/WEB-INF/view/dictionary.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../tu_dien_don_gian/src/main/webapp/WEB-INF/view/dictionary.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tu_dien_don_gian/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../tu_dien_don_gian/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,6 +158,7 @@
       <workItem from="1675152031469" duration="2172000" />
       <workItem from="1675209620264" duration="787000" />
       <workItem from="1675247791489" duration="2871000" />
+      <workItem from="1675420311915" duration="6000" />
     </task>
     <servers />
   </component>
