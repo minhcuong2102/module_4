@@ -12,14 +12,17 @@
     <title>Sandwich Condiments</title>
 </head>
 <body>
-    <h1>Sandwich Condiments</h1>
-    <form action="/save" method="get">
-        <input type="checkbox" name="condiment" value="Lettuce">Lettuce
-        <input type="checkbox" name="condiment" value="Tomato">Tomato
-        <input type="checkbox" name="condiment" value="Mustard">Mustard
-        <input type="checkbox" name="condiment" value="Sprouts">Sprouts
-        <hr>
-        <input type="submit" value="Save">
-    </form>
+<h1>Sandwich Condiments</h1>
+<form action="/save" method="get">
+    <input type="checkbox" name="condiment" value="Lettuce">Lettuce
+    <input type="checkbox" name="condiment" value="Tomato">Tomato
+    <input type="checkbox" name="condiment" value="Mustard">Mustard
+    <input type="checkbox" name="condiment" value="Sprouts">Sprouts
+    <hr>
+    <input type="submit" value="Save">
+</form>
+<c:forEach items="${condiment}" var="ingredient">
+    <p>${ingredient}</p>
+</c:forEach>
 </body>
 </html>

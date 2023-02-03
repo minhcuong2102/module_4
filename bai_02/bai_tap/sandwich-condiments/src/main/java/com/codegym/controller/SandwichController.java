@@ -16,6 +16,6 @@ public class SandwichController {
     @GetMapping("/save")
     public String save(@RequestParam("condiment") String[] condiment, ModelMap modelMap) {
         modelMap.addAttribute("condiment", condiment);
-        return "save";
+        return "index";
     }
 }
