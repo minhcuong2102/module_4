@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db4b658-f069-467c-9181-ae1f9ffc44a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/codegym/controller/TranslateController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/config/UTF8Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/TranslateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/email-validate-maven.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/src/main/webapp/WEB-INF/configs/spring-config-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/src/main/webapp/WEB-INF/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_02/thuc_hanh/email-validate-maven/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/dictionary.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/dictionary.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +164,7 @@
       <updated>1675152321984</updated>
       <workItem from="1675152324196" duration="822000" />
       <workItem from="1675209760608" duration="701000" />
-      <workItem from="1675247589831" duration="2836000" />
+      <workItem from="1675247589831" duration="4229000" />
     </task>
     <servers />
   </component>
@@ -186,57 +184,61 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="401" y="324" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.816@0.0.1536.816" timestamp="1675152464364" />
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1675257717170">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1675258664407">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1675257717170" />
-    <state width="1024" height="130" key="GridCell.Tab.0.bottom" timestamp="1675257862170">
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1675258664407" />
+    <state width="1024" height="208" key="GridCell.Tab.0.bottom" timestamp="1675259727364">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675257862170" />
-    <state width="1024" height="130" key="GridCell.Tab.0.center" timestamp="1675257862170">
+    <state width="1024" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675259727364" />
+    <state width="1024" height="208" key="GridCell.Tab.0.center" timestamp="1675259727364">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1675257862170" />
-    <state width="1024" height="130" key="GridCell.Tab.0.left" timestamp="1675257862170">
+    <state width="1024" height="208" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1675259727364" />
+    <state width="1024" height="208" key="GridCell.Tab.0.left" timestamp="1675259727364">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1675257862170" />
-    <state width="1024" height="130" key="GridCell.Tab.0.right" timestamp="1675257862170">
+    <state width="1024" height="208" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1675259727364" />
+    <state width="1024" height="208" key="GridCell.Tab.0.right" timestamp="1675259727364">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1675257862170" />
-    <state width="1024" height="130" key="GridCell.Tab.1.bottom" timestamp="1675257862123">
+    <state width="1024" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1675259727364" />
+    <state width="1024" height="208" key="GridCell.Tab.1.bottom" timestamp="1675259727364">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675257862123" />
-    <state width="1024" height="130" key="GridCell.Tab.1.center" timestamp="1675257862123">
+    <state width="1024" height="208" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675259727364" />
+    <state width="1024" height="208" key="GridCell.Tab.1.center" timestamp="1675259727364">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1675257862123" />
-    <state width="1024" height="130" key="GridCell.Tab.1.left" timestamp="1675257862123">
+    <state width="1024" height="208" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1675259727364" />
+    <state width="1024" height="208" key="GridCell.Tab.1.left" timestamp="1675259727364">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1675257862123" />
-    <state width="1024" height="130" key="GridCell.Tab.1.right" timestamp="1675257862123">
+    <state width="1024" height="208" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1675259727364" />
+    <state width="1024" height="208" key="GridCell.Tab.1.right" timestamp="1675259727364">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1675257862123" />
-    <state width="1024" height="130" key="GridCell.Tab.2.bottom" timestamp="1675257862123">
+    <state width="1024" height="208" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1675259727364" />
+    <state width="1024" height="208" key="GridCell.Tab.2.bottom" timestamp="1675259727365">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.2.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675257862123" />
-    <state width="1024" height="130" key="GridCell.Tab.2.center" timestamp="1675257862123">
+    <state width="1024" height="208" key="GridCell.Tab.2.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675259727365" />
+    <state width="1024" height="208" key="GridCell.Tab.2.center" timestamp="1675259727365">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.2.center/0.0.1536.816@0.0.1536.816" timestamp="1675257862123" />
-    <state width="1024" height="130" key="GridCell.Tab.2.left" timestamp="1675257862123">
+    <state width="1024" height="208" key="GridCell.Tab.2.center/0.0.1536.816@0.0.1536.816" timestamp="1675259727365" />
+    <state width="1024" height="208" key="GridCell.Tab.2.left" timestamp="1675259727365">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.2.left/0.0.1536.816@0.0.1536.816" timestamp="1675257862123" />
-    <state width="1024" height="130" key="GridCell.Tab.2.right" timestamp="1675257862123">
+    <state width="1024" height="208" key="GridCell.Tab.2.left/0.0.1536.816@0.0.1536.816" timestamp="1675259727365" />
+    <state width="1024" height="208" key="GridCell.Tab.2.right" timestamp="1675259727365">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="130" key="GridCell.Tab.2.right/0.0.1536.816@0.0.1536.816" timestamp="1675257862123" />
+    <state width="1024" height="208" key="GridCell.Tab.2.right/0.0.1536.816@0.0.1536.816" timestamp="1675259727365" />
+    <state x="209" y="0" key="new project wizard" timestamp="1675258737420">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="209" y="0" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1675258737420" />
   </component>
 </project>
