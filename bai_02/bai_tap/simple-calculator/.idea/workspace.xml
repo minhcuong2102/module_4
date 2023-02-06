@@ -2,7 +2,96 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8df7c5ff-311c-4e86-bc18-787bc94e31d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/build/classes/java/main/com/codegym/config/AppConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/build/classes/java/main/com/codegym/config/AppInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/build/classes/java/main/com/codegym/config/UTF8Filter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/build/classes/java/main/com/codegym/controller/CustomerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/build/classes/java/main/com/codegym/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/build/classes/java/main/com/codegym/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/build/classes/java/main/com/codegym/service/ICustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/build/libs/customer-management-thymeleaf-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/java/com/codegym/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/java/com/codegym/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/java/com/codegym/config/UTF8Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/java/com/codegym/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/java/com/codegym/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/java/com/codegym/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/java/com/codegym/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/webapp/WEB-INF/view/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/webapp/WEB-INF/view/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/webapp/WEB-INF/view/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/webapp/WEB-INF/view/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/webapp/WEB-INF/view/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/webapp/WEB-INF/view/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_03/thuc_hanh/customer-management-thymeleaf/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/build/classes/java/main/com/codegym/config/UTF8Filter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/build/classes/java/main/com/codegym/controller/EmployeeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/build/classes/java/main/com/codegym/model/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/build/libs/spring-mvc-form-tutorial-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/src/main/java/com/codegym/config/UTF8Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/src/main/java/com/codegym/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/src/main/java/com/codegym/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/src/main/webapp/WEB-INF/view/employee/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/src/main/webapp/WEB-INF/view/employee/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_04/thuc_hanh/spring-mvc-form-tutorial/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_01/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_01/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +144,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -148,7 +237,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675430912515</updated>
-      <workItem from="1675430914843" duration="1238000" />
+      <workItem from="1675430914843" duration="1768000" />
+      <workItem from="1675434571911" duration="56000" />
+      <workItem from="1675643309475" duration="1972000" />
+      <workItem from="1675647047083" duration="546000" />
+      <workItem from="1675679028424" duration="551000" />
     </task>
     <servers />
   </component>
@@ -163,53 +256,61 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1675431310445" />
-    <state width="1024" height="184" key="GridCell.Tab.0.bottom" timestamp="1675432160668">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1675679088382">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
-    <state width="1024" height="184" key="GridCell.Tab.0.center" timestamp="1675432160668">
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1675679088382" />
+    <state width="1024" height="184" key="GridCell.Tab.0.bottom" timestamp="1675646039573">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
-    <state width="1024" height="184" key="GridCell.Tab.0.left" timestamp="1675432160668">
+    <state width="1024" height="184" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675646039573" />
+    <state width="1024" height="184" key="GridCell.Tab.0.center" timestamp="1675646039572">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
-    <state width="1024" height="184" key="GridCell.Tab.0.right" timestamp="1675432160668">
+    <state width="1024" height="184" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1675646039572" />
+    <state width="1024" height="184" key="GridCell.Tab.0.left" timestamp="1675646039572">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
-    <state width="1024" height="184" key="GridCell.Tab.1.bottom" timestamp="1675432160668">
+    <state width="1024" height="184" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1675646039572" />
+    <state width="1024" height="184" key="GridCell.Tab.0.right" timestamp="1675646039573">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
-    <state width="1024" height="184" key="GridCell.Tab.1.center" timestamp="1675432160668">
+    <state width="1024" height="184" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1675646039573" />
+    <state width="1024" height="184" key="GridCell.Tab.1.bottom" timestamp="1675434628051">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
-    <state width="1024" height="184" key="GridCell.Tab.1.left" timestamp="1675432160668">
+    <state width="1024" height="184" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675434628051" />
+    <state width="1024" height="184" key="GridCell.Tab.1.center" timestamp="1675434628051">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
-    <state width="1024" height="184" key="GridCell.Tab.1.right" timestamp="1675432160668">
+    <state width="1024" height="184" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1675434628051" />
+    <state width="1024" height="184" key="GridCell.Tab.1.left" timestamp="1675434628051">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
-    <state width="1024" height="184" key="GridCell.Tab.2.bottom" timestamp="1675432160668">
+    <state width="1024" height="184" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1675434628051" />
+    <state width="1024" height="184" key="GridCell.Tab.1.right" timestamp="1675434628051">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.2.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
-    <state width="1024" height="184" key="GridCell.Tab.2.center" timestamp="1675432160668">
+    <state width="1024" height="184" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1675434628051" />
+    <state width="1024" height="184" key="GridCell.Tab.2.bottom" timestamp="1675434628051">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.2.center/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
-    <state width="1024" height="184" key="GridCell.Tab.2.left" timestamp="1675432160668">
+    <state width="1024" height="184" key="GridCell.Tab.2.bottom/0.0.1536.816@0.0.1536.816" timestamp="1675434628051" />
+    <state width="1024" height="184" key="GridCell.Tab.2.center" timestamp="1675434628051">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.2.left/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
-    <state width="1024" height="184" key="GridCell.Tab.2.right" timestamp="1675432160668">
+    <state width="1024" height="184" key="GridCell.Tab.2.center/0.0.1536.816@0.0.1536.816" timestamp="1675434628051" />
+    <state width="1024" height="184" key="GridCell.Tab.2.left" timestamp="1675434628051">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="184" key="GridCell.Tab.2.right/0.0.1536.816@0.0.1536.816" timestamp="1675432160668" />
+    <state width="1024" height="184" key="GridCell.Tab.2.left/0.0.1536.816@0.0.1536.816" timestamp="1675434628051" />
+    <state width="1024" height="184" key="GridCell.Tab.2.right" timestamp="1675434628051">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1024" height="184" key="GridCell.Tab.2.right/0.0.1536.816@0.0.1536.816" timestamp="1675434628051" />
+    <state x="209" y="0" key="new project wizard" timestamp="1675679107233">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="209" y="0" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1675679107233" />
   </component>
 </project>
