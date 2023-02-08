@@ -21,4 +21,14 @@ public class MailboxService implements IMailboxService{
     public void save(MailboxSetting mailboxSetting) {
         mailboxRepository.save(mailboxSetting);
     }
+
+    @Override
+    public MailboxSetting findById(int id) {
+        return mailboxRepository.findById(id);
+    }
+
+    @Override
+    public void editSettings(int id, MailboxSetting mailboxSetting) {
+        mailboxRepository.editSettings(id, mailboxSetting);
+    }
 }

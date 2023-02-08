@@ -1,6 +1,7 @@
 package com.codegym.model;
 
 public class MailboxSetting {
+    private int id;
     private String languages;
     private int pageSize;
     private boolean spamsFilter;
@@ -9,11 +10,20 @@ public class MailboxSetting {
     public MailboxSetting() {
     }
 
-    public MailboxSetting(String languages, int pageSize, boolean spamsFilter, String signature) {
+    public MailboxSetting(int id, String languages, int pageSize, boolean spamsFilter, String signature) {
+        this.id = id;
         this.languages = languages;
         this.pageSize = pageSize;
         this.spamsFilter = spamsFilter;
         this.signature = signature;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getLanguages() {

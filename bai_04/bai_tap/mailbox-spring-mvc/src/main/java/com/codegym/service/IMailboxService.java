@@ -7,4 +7,6 @@ import java.util.List;
 public interface IMailboxService {
     List<MailboxSetting> findAll();
     void save(MailboxSetting mailboxSetting);
+    MailboxSetting findById(int id);
+    void editSettings(int id, MailboxSetting mailboxSetting);
 }
