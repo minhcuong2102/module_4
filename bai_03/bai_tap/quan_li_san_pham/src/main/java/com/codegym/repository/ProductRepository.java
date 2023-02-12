@@ -11,11 +11,11 @@ public class ProductRepository implements IProductRepository {
     private static final List<Product> productList = new ArrayList<>();
 
     static {
-        productList.add(new Product(1, "Quạt", 200000, "Mát", "Toshiba"));
-        productList.add(new Product(2, "Laptop", 20000000, "Chạy ngon", "acer"));
-        productList.add(new Product(3, "Iphone14", 25000000, "style", "Apple"));
-        productList.add(new Product(4, "Máy giặt", 1200000, "Lợi điện", "Panasonic"));
-        productList.add(new Product(5, "TV", 7000000, "fashionable style", "Samsung"));
+        productList.add(new Product(0, "Quạt", 200000, "Mát", "Toshiba"));
+        productList.add(new Product(1, "Laptop", 20000000, "Chạy ngon", "acer"));
+        productList.add(new Product(2, "Iphone14", 25000000, "style", "Apple"));
+        productList.add(new Product(3, "Máy giặt", 1200000, "Lợi điện", "Panasonic"));
+        productList.add(new Product(4, "TV", 7000000, "fashionable style", "Samsung"));
     }
 
     @Override

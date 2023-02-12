@@ -18,12 +18,40 @@
         <a href="/product/list">
             <button class="btn btn-primary">Quay về danh sách</button>
         </a>
-        <form th:object="${product}" th:action="@{/product/edit}" method="post">
+        <form th:object="${product}" th:action="@{/product/edit/{id}(id=${id1})}" method="post">
             <table class="table table-light">
                 <tr>
-                    
+                    <td>Id</td>
+                    <td>
+                        <input type="number" th:field="*{id}" th:placeholder="${product.getId()}" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input th:field="*{name}" th:placeholder="${product.getName()}" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>
+                        <input type="number" th:field="*{price}" th:placeholder="${product.getPrice()}" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>
+                        <input th:field="*{description}" th:placeholder="${product.getDescription()}" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Producer</td>
+                    <td>
+                        <input th:field="*{producer}" th:placeholder="${product.getProducer()}" >
+                    </td>
                 </tr>
             </table>
+            <button type="submit" class="btn btn-primary" style="margin-left: 45%">Save</button>
         </form>
     </div>
 </div>
