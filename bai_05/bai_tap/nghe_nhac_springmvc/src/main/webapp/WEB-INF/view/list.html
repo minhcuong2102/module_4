@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách bài hát</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-10">
+        <h1 class="text-center">Danh sách bài hát</h1>
+        <p th:text="${mess}" class="text-danger"></p>
+        <form th:action="@{/song/search}">
+            <input type="text" name="nameSearch" placeholder="Nhập thông tin cần tìm kiếm" class="w-50">
+            <button class="btn btn-primary">Tìm kiếm</button>
+        </form>
+        <a th:href="@{/song/create}">
+            <button class="btn btn-primary">Thêm bài hát</button>
+        </a>
+        <table class="table table-striped">
+            <tr>
+                <th>STT</th>
+                <th>Id</th>
+                <th>Tên bài hát</th>
+                <th>Nhạc sĩ</th>
+                <th>Thể loại</th>
+                <th>Đường dẫn</th>
+                <th>Sửa</th>
+                <th>Xoá</th>
+            </tr>
+            <tr th:each="song, row : ${songList}">
+                <td th:text="${row.count}"></td>
+                <td th:text="${song.getId()}"></td>
+                <td th:text="${song.getName()}"></td>
+                <td th:text="${song.getMusician()}"></td>
+                <td th:text="${song.getGenre()}"></td>
+                <td><a th:href="${song.getPath()}" target="_blank"><button class="btn btn-secondary">Nghe nhạc</button></a></td>
+                <td>
+                    <a th:href="@{/song/edit/{id}(id=${song.getId()})}">
+                        <button class="btn btn-primary">Sửa</button>
+                    </a>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                            th:attr="onclick=|deleteSong('${song.getId()}','${song.getName()}')|"> Xoá
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <!--Modal delete-->
+        <div class="modal fade" id="deleteModal" data-bs-backdrop="static" data-bs-keyboard="false"
+             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Xoá sản phẩm</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có muốn xoá bài hát <span id="nameSongDelete"></span> không?
+                    </div>
+                    <form action="/song/delete" method="get">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng
+                            </button>
+                            <button type="submit" class="btn btn-danger">Xoá</button>
+                            <input hidden name="id" type="text" id="idDelete">
+                            <input hidden name="action" value="delete" type="text" id="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script th:inline="javascript">
+    function deleteSong(id, name) {
+        document.getElementById('nameSongDelete').innerText = name;
+        document.getElementById('idDelete').value = id;
+    }
+</script>
+</html>
