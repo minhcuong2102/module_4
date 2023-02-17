@@ -5,193 +5,132 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2d8acc-cd93-4e60-a30d-f9612110b9d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/libs/nghe_nhac_springmvc-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/upload_file.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/config/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/config/FilterUTF8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/SongController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/model/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/repository/ISongRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/repository/SongRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/ISongService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/SongService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/upload_file.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/java/com/codegym/quan_ly_blog/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/java/com/codegym/quan_ly_blog/QuanLyBlogApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/java/com/codegym/quan_ly_blog/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/java/com/codegym/quan_ly_blog/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/java/com/codegym/quan_ly_blog/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/java/com/codegym/quan_ly_blog/repository/IBlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/java/com/codegym/quan_ly_blog/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/java/com/codegym/quan_ly_blog/service/IBlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/static/bootstrap-5.0.2-dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/bai_tap/quan_ly_blog/src/test/java/com/codegym/quan_ly_blog/QuanLyBlogApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/7.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/classes/java/main/com/codegym/cms/configuration/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/classes/java/main/com/codegym/cms/configuration/AppInit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/classes/java/main/com/codegym/cms/controller/CustomerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/classes/java/main/com/codegym/cms/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/classes/java/main/com/codegym/cms/repository/CustomerRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/classes/java/main/com/codegym/cms/repository/ICustomerRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/classes/java/main/com/codegym/cms/repository/IGeneralRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/classes/java/main/com/codegym/cms/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/classes/java/main/com/codegym/cms/service/ICustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/classes/java/main/com/codegym/cms/service/IGeneralService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/libs/customer-management-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/java/com/codegym/cms/configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/java/com/codegym/cms/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/java/com/codegym/cms/configuration/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/java/com/codegym/cms/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/java/com/codegym/cms/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/java/com/codegym/cms/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/java/com/codegym/cms/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/java/com/codegym/cms/repository/IGeneralRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/java/com/codegym/cms/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/java/com/codegym/cms/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/java/com/codegym/cms/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/webapp/WEB-INF/views/customer/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/webapp/WEB-INF/views/customer/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/webapp/WEB-INF/views/customer/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/webapp/WEB-INF/views/customer/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_06/thuc_hanh/customer-management/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_01/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_01/thuc_hanh/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.idea/ung_dung_nghe_nhac.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build/classes/java/main/com/codegym/config/AppConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build/classes/java/main/com/codegym/config/AppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build/classes/java/main/com/codegym/controller/SongController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build/classes/java/main/com/codegym/model/Song.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build/classes/java/main/com/codegym/repository/ISongRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build/classes/java/main/com/codegym/repository/SongRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build/classes/java/main/com/codegym/service/ISongService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build/classes/java/main/com/codegym/service/SongService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build/libs/ung_dung_nghe_nhac-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/java/com/codegym/config/AppConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/java/com/codegym/config/AppInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/java/com/codegym/controller/SongController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/java/com/codegym/model/Song.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/java/com/codegym/repository/ISongRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/java/com/codegym/repository/SongRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/java/com/codegym/service/ISongService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/java/com/codegym/service/SongService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/bootstrap-5.0.2-dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/WEB-INF/view/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ung_dung_nghe_nhac/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +185,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MTHome" />
   </component>
   <component name="RecentsManager">
@@ -347,18 +286,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -368,7 +295,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676457539904</updated>
-      <workItem from="1676457543177" duration="3895000" />
+      <workItem from="1676457543177" duration="7116000" />
+      <workItem from="1676505204461" duration="1215000" />
+      <workItem from="1676630464596" duration="2381000" />
     </task>
     <servers />
   </component>
@@ -385,6 +314,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
