@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách danh mục</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-10">
+        <h1 class="text-center">Danh sách danh mục</h1>
+        <a th:href="@{/category/create}">
+            <button class="btn btn-primary">Thêm danh mục mới</button>
+        </a>
+        <a th:href="@{/blog/list}">
+            <button class="btn btn-primary">Danh sách blog</button>
+        </a>
+        <div class="text-danger">
+            <div th:if="${mess}">
+                <span th:text="${mess}"></span>
+            </div>
+        </div>
+        <form th:action="@{/category/list}">
+            <input type="text" name="nameSearch" placeholder="Nhập thông tin cần tìm kiếm" class="w-50"
+                   th:value="${nameSearch}">
+            <button class="btn btn-primary">Tìm kiếm</button>
+        </form>
+        <table class="table table-striped">
+            <tr>
+                <th>STT</th>
+                <th>Danh mục</th>
+                <th>Bài viết</th>
+                <th>Sửa</th>
+                <th>Xoá</th>
+            </tr>
+            <tr th:each="category, row : ${categoryList}">
+                <td th:text="${row.count}"></td>
+                <td th:text="${category.name}"></td>
+                <td>
+                    <span th:each="blog : ${category.getBlogSet()}">
+                        <span th:text="${blog.title}"></span><br><br>
+                    </span>
+                </td>
+                <td>
+                    <a th:href="@{/blog/edit(id=${category.getId()})}">
+                        <button class="btn btn-primary">Sửa</button>
+                    </a>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                            th:attr="onclick=|remove('${category.getId()}','${category.getName()}')|">Xoá
+                    </button>
+                </td>
+            </tr>
+            <tr th:if="${categoryList.isEmpty()}">
+                <td colspan="7" class="text-center">Danh sách trống</td>
+            </tr>
+        </table>
+        <!--Modal delete-->
+        <div class="modal fade" id="deleteModal" data-bs-backdrop="static" data-bs-keyboard="false"
+             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Xoá</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có muốn xoá danh mục <span id="nameDelete"></span> không?
+                    </div>
+                    <form action="/category/delete" method="get">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng
+                            </button>
+                            <button type="submit" class="btn btn-danger">Xoá</button>
+                            <input hidden name="id" type="text" id="idDelete">
+                            <input hidden name="action" value="delete" type="text" id="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script th:inline="javascript">
+    function remove(id, name) {
+        document.getElementById('nameDelete').innerText = name;
+        document.getElementById('idDelete').value = id;
+    }
+</script>
+</html>

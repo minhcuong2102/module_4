@@ -1,9 +1,6 @@
 package com.codegym.quan_ly_blog.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Blog {
@@ -11,16 +8,37 @@ public class Blog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String title;
-    private String author;
+    @Column(columnDefinition = "date")
+    private String time;
     private String status;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id", referencedColumnName = "id")
+    private Category category;
+
+    public Blog(int id, String title, String time, String status, Category category) {
+        this.id = id;
+        this.title = title;
+        this.time = time;
+        this.status = status;
+        this.category = category;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 
     public Blog() {
     }
 
-    public Blog(int id, String title, String author, String status) {
+    public Blog(int id, String title, String time, String status) {
         this.id = id;
         this.title = title;
-        this.author = author;
+        this.time = time;
         this.status = status;
     }
 
@@ -40,12 +58,12 @@ public class Blog {
         this.title = title;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getTime() {
+        return time;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setTime(String author) {
+        this.time = author;
     }
 
     public String getStatus() {

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Chỉnh sửa</title>
+    <title>Sửa danh mục</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -15,33 +15,21 @@
     <div class="col-2"></div>
     <div class="col-10">
         <h1 class="text-center">Chỉnh sửa blog</h1>
-        <a href="/blog/list">
+        <a href="/category/list">
             <button class="btn btn-primary">Quay về danh sách</button>
         </a>
-        <form th:object="${blog}" th:action="@{/blog/update}" method="post">
+        <form th:object="${category}" th:action="@{/blog/update}" method="post">
             <table class="table table-light">
                 <tr>
                     <td>Id</td>
                     <td>
-                        <input type="number" th:field="*{id}" th:placeholder="${blog.getId()}" >
+                        <input type="number" th:field="*{id}" th:placeholder="${category.getId()}" >
                     </td>
                 </tr>
                 <tr>
-                    <td>Tiêu đề</td>
+                    <td>Danh mục</td>
                     <td>
-                        <input th:field="*{title}" th:placeholder="${blog.getTitle()}" >
-                    </td>
-                </tr>
-                <tr>
-                    <td>Người viết</td>
-                    <td>
-                        <input th:field="*{author}" th:placeholder="${blog.getAuthor()}" >
-                    </td>
-                </tr>
-                <tr>
-                    <td>Tình trạng</td>
-                    <td>
-                        <input th:field="*{status}" th:placeholder="${blog.getStatus()}" >
+                        <input th:field="*{name}" th:placeholder="${category.getName()}" >
                     </td>
                 </tr>
             </table>

@@ -12,40 +12,49 @@
 </head>
 <body>
 <div class="row">
-    <div class="col-2"></div>
-    <div class="col-10">
+    <div class="col-2">
+    </div>
+    <div class="col-10 container-fluid">
         <h1 class="text-center">Danh sách blog</h1>
         <a th:href="@{/blog/create}">
             <button class="btn btn-primary">Thêm blog mới</button>
+        </a><br><br>
+        <a th:href="@{/category/list}">
+            <button class="btn btn-primary">Danh sách danh mục</button>
         </a>
         <div class="text-danger">
             <div th:if="${mess}">
-                <span th:text="${mess}"></span>
+                <p th:text="${mess}"></p>
             </div>
         </div>
-        <form th:action="@{/blog/search}">
-            <input type="text" name="nameSearch" placeholder="Nhập thông tin cần tìm kiếm" class="w-50">
+        <form th:action="@{/blog/list}">
+            <input type="text" name="nameSearch" placeholder="Nhập thông tin cần tìm kiếm" class="w-50" th:value="${nameSearch}">
+            <select name="searchCategory">
+                <option th:each="category : ${categoryList}" th:value="${category.id}" th:text="${category.name}"></option>
+            </select><br>
             <button class="btn btn-primary">Tìm kiếm</button>
         </form>
         <table class="table table-striped">
             <tr>
                 <th>STT</th>
                 <th>Tiêu đề</th>
-                <th>Người viết</th>
-                <th>Tình trạng</th>
+                <th>Danh mục</th>
+                <th>Thời gian đăng</th>
+                <th>Nội dung</th>
                 <th>Sửa</th>
                 <th>Xoá</th>
                 <th>Xem</th>
             </tr>
-            <tr th:each="blog, row : ${blogList}">
+            <tr th:each="blog, row : ${pages}">
                 <td th:text="${row.count}"></td>
                 <td th:text="${blog.title}"></td>
-                <td th:text="${blog.author}"></td>
+                <td th:text="${blog.category.getName()}"></td>
+                <td th:text="${blog.time}"></td>
                 <td th:text="${blog.status}"></td>
                 <td>
-                <a th:href="@{/blog/edit(id=${blog.getId()})}">
-                    <button class="btn btn-primary">Sửa</button>
-                </a>
+                    <a th:href="@{/blog/edit(id=${blog.getId()})}">
+                        <button class="btn btn-primary">Sửa</button>
+                    </a>
                 </td>
                 <td>
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
@@ -54,15 +63,27 @@
                 </td>
                 <td>
                     <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#detail"
-                            th:attr="onclick=|showDetail('${blog.getId()}','${blog.getTitle()}',
-                            '${blog.getAuthor()}','${blog.getStatus()}')|">Chi tiết
+                            th:attr="onclick=|showDetail('${blog.getId()}', '${blog.getTitle()}', '${blog.getCategory().getName()}',
+                            '${blog.getTime()}', '${blog.getStatus()}')|">Chi tiết
                     </button>
                 </td>
             </tr>
-            <tr th:if="${blogList.isEmpty()}">
+            <tr th:if="${pages.isEmpty()}">
                 <td colspan="7" class="text-center">Danh sách trống</td>
             </tr>
         </table>
+        <div class="text-center">
+            <a th:href="@{/blog/list(page =${pages.number - 1}, nameSearch=${nameSearch}, categorySearch=${categorySearch})}"
+               th:if="${pages.hasPrevious()}">
+                <button class="btn btn-primary">Previous</button>
+            </a>
+            <span th:text="${pages.number + 1}"></span>/<span th:text="${pages.totalPages}"></span>
+            <a th:href="@{/blog/list(page =${pages.number + 1}, nameSearch=${nameSearch}, categorySearch=${categorySearch})}"
+               th:if="${pages.hasNext()}">
+                <button class="btn btn-primary">Next</button>
+            </a>
+        </div>
+
         <!--Modal delete-->
         <div class="modal fade" id="deleteModal" data-bs-backdrop="static" data-bs-keyboard="false"
              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -74,7 +95,7 @@
                                 aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Bạn có muốn xoá blog <span id="nameBlogDelete"></span> ?
+                        Bạn có muốn xoá blog <span id="nameBlogDelete"></span> không?
                     </div>
                     <form action="/blog/delete" method="get">
                         <div class="modal-footer">
@@ -94,7 +115,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"> Chi tiết sản phẩm</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Chi tiết</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                     </div>
@@ -108,13 +129,17 @@
                             <hr>
                             <div class="row">
                                 <div class="col-md-4"><h5>Tiêu đề</h5></div>
-                                <h5></h5>
                                 <div class="col-md-8 ms-auto" id="showTitleDetail"></div>
                             </div>
                             <hr>
                             <div class="row">
-                                <div class="col-md-4"><h5>Người viết</h5></div>
-                                <div class="col-md-8 ms-auto" id="showAuthorDetail"></div>
+                                <div class="col-md-4"><h5>Danh mục</h5></div>
+                                <div class="col-md-8 ms-auto" id="showCategoryDetail"></div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-4"><h5>Thời gian đăng</h5></div>
+                                <div class="col-md-8 ms-auto" id="showTimeDetail"></div>
                             </div>
                             <hr>
                             <div class="row">
@@ -139,10 +164,11 @@
         document.getElementById('idDelete').value = id;
     }
 
-    function showDetail(id, title, author, status) {
+    function showDetail(id, title, category, time, status) {
         document.getElementById("showIdDetail").value = id;
         document.getElementById("showTitleDetail").innerText = title;
-        document.getElementById("showAuthorDetail").innerText = author;
+        document.getElementById("showCategoryDetail").innerText = category;
+        document.getElementById("showTimeDetail").innerText = time;
         document.getElementById("showStatusDetail").innerText = status;
     }
 </script>

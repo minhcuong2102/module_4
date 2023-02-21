@@ -3,6 +3,8 @@ package com.codegym.quan_ly_blog.service;
 import com.codegym.quan_ly_blog.model.Blog;
 import com.codegym.quan_ly_blog.repository.IBlogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -13,6 +15,20 @@ public class BlogService implements IBlogService {
     @Autowired
     IBlogRepository iBlogRepository;
 
+    @Override
+    public Page<Blog> search(String title, Pageable pageable) {
+        return iBlogRepository.findByTitleContaining(title, pageable);
+    }
+
+    @Override
+    public Page<Blog> searchCategory(Integer id, Pageable pageable) {
+        return iBlogRepository.findByCategory_Id(id, pageable);
+    }
+
+    @Override
+    public Page<Blog> searchNameAndCategory(String nameSearch, Integer id, Pageable pageable) {
+        return iBlogRepository.findByTitleContainingAndCategory_Id(nameSearch, id, pageable);
+    }
 
     @Override
     public List<Blog> findAll() {
