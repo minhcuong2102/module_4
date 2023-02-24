@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách user</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-10">
+        <h1 class="text-center">Danh sách người dùng</h1>
+        <a th:href="@{/user/create}">
+            <button class="btn btn-primary">Thêm mới</button>
+        </a>
+        <table class="table table-striped">
+            <tr>
+                <th>STT</th>
+                <th>ID</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Phone number</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Edit</th>
+                <th>Delete</th>
+                <th>Detail</th>
+            </tr>
+            <tr th:each="user, row : ${userList}">
+                <td th:text="${row.count}"></td>
+                <td th:text="${user.id}"></td>
+                <td th:text="${user.firstName}"></td>
+                <td th:text="${user.lastName}"></td>
+                <td th:text="${user.age}"></td>
+                <td th:text="${user.phoneNumber}"></td>
+                <td th:text="${user.email}"></td>
+                <td>
+                    <a th:href="@{/user/edit(id=${user.getId()})}">
+                        <button class="btn btn-primary">Sửa</button>
+                    </a>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                            th:attr="onclick=|deleteUser('${user.getId()}','${user.getFirstName()}', '${user.getLastName()}')|">Xoá
+                    </button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#detail"
+                            th:attr="onclick=|showDetail('${user.getId()}', '${user.getFirstName()}', '${user.getLastName()}',
+                            '${user.getAge()}', '${user.getPhoneNumber()}', '${user.getEmail()}')|">Chi tiết
+                    </button>
+                </td>
+            </tr>
+            <tr th:if="${userList.isEmpty()}">
+                <td colspan="7" class="text-center">Danh sách trống</td>
+            </tr>
+        </table>
+        <div class="text-center">
+            <a th:href="@{/user(page =${userList.number - 1})}" th:if="${userList.hasPrevious()}">Previous</a>
+            <span th:text="${userList.number + 1}"></span>/<span th:text="${userList.totalPages}"></span>
+            <a th:href="@{/user(page =${userList.number + 1})}" th:if="${userList.hasNext()}">Next</a>
+        </div>
+        <!--Modal delete-->
+        <div class="modal fade" id="deleteModal" data-bs-backdrop="static" data-bs-keyboard="false"
+             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Xoá</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có muốn xoá user <span id="firstName"></span> <span id="lastName"></span> không?
+                    </div>
+                    <form action="/user/delete" method="get">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng
+                            </button>
+                            <button type="submit" class="btn btn-danger">Xoá</button>
+                            <input hidden name="id" type="text" id="idDelete">
+                            <input hidden name="action" value="delete" type="text" id="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--Modal detail-->
+        <div class="modal fade" id="detail" tabindex="-1" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Chi tiết</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4"><h5>Id</h5></div>
+                                <h5></h5>
+                                <div class="col-md-8 ms-auto" id="showIdDetail"></div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-4"><h5>First name</h5></div>
+                                <div class="col-md-8 ms-auto" id="showFirstNameDetail"></div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-4"><h5>Last name</h5></div>
+                                <div class="col-md-8 ms-auto" id="showLastNameDetail"></div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-4"><h5>Age</h5></div>
+                                <div class="col-md-8 ms-auto" id="showAgeDetail"></div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-4"><h5>Phone number</h5></div>
+                                <div class="col-md-8 ms-auto" id="showPhoneNumberDetail"></div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-4"><h5>Email</h5></div>
+                                <div class="col-md-8 ms-auto" id="showEmailDetail"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script th:inline="javascript">
+    function deleteUser(id, name1, name2) {
+        document.getElementById('firstName').innerText = name1;
+        document.getElementById('lastName').innerText = name2;
+        document.getElementById('idDelete').value = id;
+    }
+
+    function showDetail(id, firstName, lastName, age, phoneNumber, email) {
+        document.getElementById("showIdDetail").value = id;
+        document.getElementById("showFirstNameDetail").innerText = firstName;
+        document.getElementById("showLastNameDetail").innerText = lastName;
+        document.getElementById("showAgeDetail").innerText = age;
+        document.getElementById("showPhoneNumberDetail").innerText = phoneNumber;
+        document.getElementById("showEmailDetail").innerText = email;
+    }
+</script>
+</html>

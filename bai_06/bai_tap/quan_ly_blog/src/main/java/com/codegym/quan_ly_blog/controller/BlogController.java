@@ -31,7 +31,7 @@ public class BlogController {
                            @RequestParam(defaultValue = "0") int page) {
         Pageable pageable = PageRequest.of(page, 2, Sort.by("time").descending());
 
-        Page<Blog> pages = null;
+        Page<Blog> pages;
         if (nameSearch.equals("") && categorySearch == 0) {
             pages = iBlogService.search(nameSearch, pageable);
         } else if (nameSearch.equals("")) {
