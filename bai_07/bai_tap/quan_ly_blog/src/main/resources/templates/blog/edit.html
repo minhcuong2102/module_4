@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉnh sửa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-10">
+        <h1 class="text-center">Chỉnh sửa blog</h1>
+        <a href="/blog/list">
+            <button class="btn btn-primary">Quay về danh sách</button>
+        </a>
+        <form th:object="${blog}" th:action="@{/blog/update}" method="post">
+            <table class="table table-light">
+                <tr>
+                    <td>Id</td>
+                    <td>
+                        <input type="number" th:field="*{id}" th:placeholder="${blog.getId()}" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tiêu đề</td>
+                    <td>
+                        <input th:field="*{title}" th:placeholder="${blog.getTitle()}" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Danh mục</td>
+                    <td>
+                        <select th:field="*{category}" required>
+                            <option th:each="cate : ${categoryList}" th:value="${cate.id}" th:text="${cate.name}"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thời gian đăng</td>
+                    <td>
+                        <input type="date" th:field="*{time}" th:placeholder="${blog.getTime()}" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nội dung</td>
+                    <td>
+                        <input th:field="*{status}" th:placeholder="${blog.getStatus()}" >
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" class="btn btn-primary" style="margin-left: 45%">Lưu</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
