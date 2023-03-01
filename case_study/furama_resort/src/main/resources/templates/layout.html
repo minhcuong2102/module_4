@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+</head>
+<body>
+<div th:fragment="header">
+    <header class="row navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img src="" alt="Logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <h4 style="font-family: 'Arial Black',fantasy"><a class="navbar-brand text-danger" href="/view/home.jsp">FURAMA RESORT</a></h4>
+                    </li>
+                </ul>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <h5 style="margin-right: 20px">Huỳnh Minh Cường</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>
+<div th:fragment="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 7%">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto col-10">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/view/home.jsp">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/employee">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/customer">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/facility">Facility</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contract">Contract</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 col-2">
+                <input class="form-control mr-sm-2 ct-search-textbox" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" hidden>Search</button>
+            </form>
+        </div>
+    </nav>
+</div>
+<div th:fragment="sidebar">
+    <div class="col-2">
+        <ul class="list-group vh-79 left-nav-scroll" style="height: 81%">
+            <li class="list-group-item">Item 1</li>
+            <li class="list-group-item">Item 2</li>
+            <li class="list-group-item">Item 3</li>
+            <li class="list-group-item">Item 4</li>
+            <li class="list-group-item">Item 5</li>
+            <li class="list-group-item">Item 6</li>
+            <li class="list-group-item">Item 7</li>
+            <li class="list-group-item">Item 8</li>
+            <li class="list-group-item">Item 9</li>
+            <li class="list-group-item">Item 10</li>
+            <li class="list-group-item">Item 11</li>
+            <li class="list-group-item">Item 12</li>
+            <li class="list-group-item">Item 13</li>
+            <li class="list-group-item">Item 14</li>
+            <li class="list-group-item">Item 15</li>
+        </ul>
+    </div>
+</div>
+<div th:fragment="footer">
+    <footer class="col-12 bg-light text-center">
+        <p>Footer</p>
+    </footer>
+</div>
+</body>
+</html>

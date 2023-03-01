@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Danh sách blog</title>
+    <title>Danh sách nhân viên</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -11,90 +11,24 @@
     </script>
 </head>
 <body>
+<div th:insert="layout::header"></div>
+<div th:insert="layout::navbar"></div>
 <div class="row">
-    <div class="col-2">
-    </div>
+    <div th:insert="layout::sidebar"></div>
     <div class="col-10 container-fluid">
-        <h1 class="text-center">Danh sách blog</h1>
-        <a th:href="@{/blog/create}">
-            <button class="btn btn-primary">Thêm blog mới</button>
-        </a><br><br>
-        <a th:href="@{/category/list}">
-            <button class="btn btn-primary">Danh sách danh mục</button>
-        </a>
-        <div class="text-danger">
-            <div th:if="${mess}">
-                <p th:text="${mess}"></p>
-            </div>
-        </div>
-        <form th:action="@{/blog/list}">
-            <input type="text" name="nameSearch" placeholder="Nhập thông tin cần tìm kiếm" class="w-50"
-                   th:value="${nameSearch}">
-            <select name="searchCategory">
-                <option th:each="category : ${categoryList}" th:value="${category.id}"
-                        th:text="${category.name}"></option>
-            </select><br>
-            <button class="btn btn-primary">Tìm kiếm</button>
-        </form>
+        <h1 class="text-center">Danh sách nhân viên</h1>
+
         <table class="table table-striped">
             <tr>
-                <th>STT</th>
-                <th>Tiêu đề</th>
-                <th>Danh mục</th>
-                <th>Thời gian đăng</th>
-                <th>Nội dung</th>
-                <th>Sửa</th>
-                <th>Xoá</th>
-                <th>Xem</th>
-                <th scope="col">
-                    <button id="btn" type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                            data-bs-toggle="modal" data-bs-target="#deleteModals">Xoá nhiều
-                    </button>
-                </th>
+
             </tr>
-            <tr th:each="blog, row : ${pages}">
-                <td th:text="${row.count}"></td>
-                <td th:text="${blog.title}"></td>
-                <td th:text="${blog.category.getName()}"></td>
-                <td th:text="${blog.time}"></td>
-                <td th:text="${blog.status}"></td>
-                <td>
-                    <a th:href="@{/blog/edit(id=${blog.getId()})}">
-                        <button class="btn btn-primary">Sửa</button>
-                    </a>
-                </td>
-                <td>
-                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
-                            th:attr="onclick=|deleteBlog('${blog.getId()}','${blog.getTitle()}')|">Xoá
-                    </button>
-                </td>
-                <td>
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#detail"
-                            th:attr="onclick=|showDetail('${blog.getId()}', '${blog.getTitle()}', '${blog.getCategory().getName()}',
-                            '${blog.getTime()}', '${blog.getStatus()}')|">Chi tiết
-                    </button>
-                </td>
-                <td>
-                    <label>
-                        <input name="idDelete" class="form-check-input" type="checkbox" th:value="${blog.getId()}">
-                    </label>
-                </td>
-            </tr>
-            <tr th:if="${pages.isEmpty()}">
-                <td colspan="7" class="text-center">Danh sách trống</td>
+            <tr>
+
             </tr>
         </table>
-        <div class="text-center">
-            <a th:href="@{/blog/list(page =${pages.number - 1}, nameSearch=${nameSearch}, categorySearch=${categorySearch})}"
-               th:if="${pages.hasPrevious()}">
-                <button class="btn btn-primary">Previous</button>
-            </a>
-            <span th:text="${pages.number + 1}"></span>/<span th:text="${pages.totalPages}"></span>
-            <a th:href="@{/blog/list(page =${pages.number + 1}, nameSearch=${nameSearch}, categorySearch=${categorySearch})}"
-               th:if="${pages.hasNext()}">
-                <button class="btn btn-primary">Next</button>
-            </a>
-        </div>
+
+
+
 
         <!--Modal delete-->
         <div class="modal fade" id="deleteModal" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -178,7 +112,7 @@
                                 aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <!--                        Bạn có muốn xoá blog có mã <span id="titleBlogDeletes"></span> không?-->
+<!--                        Bạn có muốn xoá blog có mã <span id="titleBlogDeletes"></span> không?-->
                         Bạn có muốn xoá những blog đã chọn không?
                     </div>
                     <form action="/blog/multiDelete" method="get">
@@ -194,6 +128,7 @@
         </div>
     </div>
 </div>
+<div th:insert="layout::footer"></div>
 </body>
 <script th:inline="javascript">
     function deleteBlog(id, name) {

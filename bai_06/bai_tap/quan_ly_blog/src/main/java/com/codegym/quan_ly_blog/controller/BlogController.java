@@ -13,6 +13,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Optional;
 
 @Controller
@@ -49,12 +51,14 @@ public class BlogController {
     @GetMapping("/create")
     public String showCreateForm(Model model) {
         model.addAttribute("blog", new Blog());
+        model.addAttribute("dateCreate", dateCreate());
         model.addAttribute("categoryList", iCategoryService.findAll());
         return "blog/create";
     }
 
     @PostMapping("/create")
     public String save(@ModelAttribute Blog blog, RedirectAttributes redirectAttributes) {
+        blog.setTime(dateCreate());
         iBlogService.save(blog);
         redirectAttributes.addFlashAttribute("mess", "Đã thêm thành công");
         return "redirect:/blog/list";
@@ -62,7 +66,8 @@ public class BlogController {
 
     @GetMapping("/delete")
     public String delete(@RequestParam int id, RedirectAttributes redirectAttributes) {
-        iBlogService.remove(id);
+        Blog blog = iBlogService.findById(id);
+        iBlogService.delete(blog);
         redirectAttributes.addFlashAttribute("mess", "Đã xoá thành công");
         return "redirect:/blog/list";
     }
@@ -80,7 +85,34 @@ public class BlogController {
         redirectAttributes.addFlashAttribute("mess", "Chỉnh sửa thành công");
         return "redirect:/blog/list";
     }
+    public static String removeCharAt(String s, int pos) {
+        return s.substring(0, pos) + s.substring(pos + 1);
+    }
 
+    @GetMapping("/multiDelete")
+    public String multiDelete(@RequestParam String idDeleteMore) {
+        idDeleteMore = removeCharAt(idDeleteMore, 0);
+
+        String[] idDelete = idDeleteMore.split("\\.");
+        int[] arrId = new int[idDelete.length];
+        for (int i = 0; i < idDelete.length; i++) {
+            arrId[i] = Integer.parseInt(idDelete[i]);
+        }
+
+        for (int i : arrId) {
+            Blog blog = new Blog();
+            blog = iBlogService.findById(i);
+            iBlogService.delete(blog);
+        }
+        return "redirect:/blog/list";
+    }
+
+    public String dateCreate() {
+        Date date = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        String dateCreate = format.format(date);
+        return dateCreate;
+    }
 //    @GetMapping("/search")
 //    public String searchProduct(@RequestParam String nameSearch, Model model) {
 //        model.addAttribute("blogList", iBlogService.findByName(nameSearch));
