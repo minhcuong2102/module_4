@@ -43,7 +43,7 @@ public class BlogController {
         }
         model.addAttribute("categoryList", iCategoryService.findAll());
         model.addAttribute("pages", pages);
-        model.addAttribute("categorySearch", categorySearch);
+        model.addAttribute("categorySearch", iCategoryService.findById(categorySearch));
         model.addAttribute("nameSearch", nameSearch);
         return "blog/list";
     }

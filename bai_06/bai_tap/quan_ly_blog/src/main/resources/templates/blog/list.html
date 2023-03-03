@@ -27,14 +27,17 @@
                 <p th:text="${mess}"></p>
             </div>
         </div>
-        <form th:action="@{/blog/list}">
-            <input type="text" name="nameSearch" placeholder="Nhập thông tin cần tìm kiếm" class="w-50"
-                   th:value="${nameSearch}">
-            <select name="searchCategory">
-                <option th:each="category : ${categoryList}" th:value="${category.id}"
-                        th:text="${category.name}"></option>
-            </select><br>
-            <button class="btn btn-primary">Tìm kiếm</button>
+        <form th:action="@{/blog}">
+            <input name="nameSearch" placeholder="nhập tên" th:value="${nameSearch}">
+            <label class="form-label">Danh mục</label>
+            <select th:if="${categorySearch==0}" name="id">
+                <option th:each="category : ${categoryList}" th:value="${category.id}" th:text="${category.name}"></option>
+            </select>
+            <select name="id" th:if="${categorySearch!=0}">
+                <option  th:value="${categorySearch.id}" th:text="${categorySearch.name}"></option>
+                <option th:each="category : ${categoryList}" th:if="${category.id!=categorySearch}" th:value="${category.id}" th:text="${category.name}"></option>
+            </select>
+            <button>Search</button>
         </form>
         <table class="table table-striped">
             <tr>
@@ -85,12 +88,14 @@
             </tr>
         </table>
         <div class="text-center">
-            <a th:href="@{/blog/list(page =${pages.number - 1}, nameSearch=${nameSearch}, categorySearch=${categorySearch})}"
+            <a th:href="@{/blog/list(page=${pages.number - 1}, nameSearch=${nameSearch}, categorySearch=${categorySearch})}"
                th:if="${pages.hasPrevious()}">
                 <button class="btn btn-primary">Previous</button>
             </a>
+
             <span th:text="${pages.number + 1}"></span>/<span th:text="${pages.totalPages}"></span>
-            <a th:href="@{/blog/list(page =${pages.number + 1}, nameSearch=${nameSearch}, categorySearch=${categorySearch})}"
+
+            <a th:href="@{/blog/list(page=${pages.number + 1}, nameSearch=${nameSearch}, categorySearch=${categorySearch})}"
                th:if="${pages.hasNext()}">
                 <button class="btn btn-primary">Next</button>
             </a>

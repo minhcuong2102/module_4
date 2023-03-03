@@ -8,10 +8,20 @@ public class CustomerType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(length = 45)
     private String name;
 
-    @OneToMany(mappedBy = "customer_type_id")
+    @OneToMany(mappedBy = "customerType")
     private Set<Customer> customerSet;
+
+    public CustomerType() {
+    }
+
+    public CustomerType(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public int getId() {
         return id;

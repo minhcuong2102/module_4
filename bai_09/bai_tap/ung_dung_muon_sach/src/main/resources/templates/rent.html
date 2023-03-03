@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mượn sách</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-10">
+        <h1 class="text-center">Mượn sách</h1>
+        <form th:object="${bookRentalDto}" th:action="@{/rent}" method="post">
+            <input th:field="*{id}" hidden>
+            <input th:field="*{statusId}" hidden>
+            <table class="table table-light">
+                <tr>
+                    <td>Tên sách</td>
+                    <td>
+                        <select th:field="*{bookId}" onchange="createId(5)">
+                            <option value="null">Chọn sách</option>
+                            <option th:each="book : ${bookList}" th:value="${book.getId()}"
+                                    th:text="${book.getName()}"></option>
+                        </select>
+                    </td>
+                    <td>
+                        <input id="rentIdRandom" name="rentIdRandom" th:field="*{rentId}" maxlength="5">
+                        <small style="color: red" th:if="${#fields.hasErrors('rentId')}"
+                               th:errors="*{rentId}"></small><br>
+                    </td>
+                </tr>
+            </table>
+            <small style="color: red" th:text="${mess}"></small><br>
+            <small id="buttonSubmit" name="buttonSubmit"></small>
+        </form>
+    </div>
+</div>
+</body>
+<script>
+    function createId(length) {
+        let result = '';
+        let optionId = document.getElementById("bookId").value;
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        const charactersLength = characters.length;
+        let counter = 0;
+        while (counter < length) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            counter += 1;
+        }
+        if (optionId === "null") {
+            document.getElementById("buttonSubmit").innerHTML = "";
+            document.getElementById("rentIdRandom").value = "";
+            document.getElementById("statusId").value = "";
+        } else {
+            document.getElementById("buttonSubmit").innerHTML = "<button class='btn btn-primary' type='submit'>Thuê</button>";
+            document.getElementById("rentIdRandom").value = result;
+            document.getElementById("statusId").value = "1";
+        }
+    }
+</script>
+</html>

@@ -14,12 +14,35 @@
 <div th:insert="layout::header"></div>
 <div th:insert="layout::navbar"></div>
 <div class="row">
-    <div th:insert="layout::sidebar"></div>
-    <div class="col-10 container-fluid">
+    <!--    <div th:insert="layout::sidebar" class="col-1"></div>-->
+    <div class="col-12 container-fluid">
         <h1 class="text-center">Danh sách nhân viên</h1>
-
+        <a th:href="@{/customer/create}">
+            <button class="btn btn-primary">Thêm mới</button>
+        </a>
+        <div class="text-danger">
+            <div th:if="${mess}">
+                <p th:text="${mess}"></p>
+            </div>
+        </div>
+        <br>
+        <form class="d-flex m-0" th:action="@{/customer}" method="get">
+            <input name="nameSearch" placeholder="nhập tên" th:value="${nameSearch}">
+            <label class="form-label">Loại khách</label>
+            <select th:if="${customerTypeList==0}" name="typeSearch">
+                <option th:each="customerType : ${customerTypeList}" th:value="${customerType.id}"
+                        th:text="${customerType.name}"></option>
+            </select>
+            <select name="typeSearch" th:if="${typeSearch!=0}">
+                <option th:value="${typeSearch.id}" th:text="${typeSearch.name}"></option>
+                <option th:each="category : ${customerTypeList}" th:if="${category.id!=typeSearch}"
+                        th:value="${category.id}" th:text="${category.name}"></option>
+            </select>
+            <button class="btn btn-outline-primary" type="submit">Tìm kiếm</button>
+        </form>
+        <br>
         <table class="table table-striped">
-            <tr>
+            <tr class="text-center">
                 <th>STT</th>
                 <th>Loại khách</th>
                 <th>Tên khách hàng</th>
@@ -31,17 +54,66 @@
                 <th>Địa chỉ</th>
                 <th>Sửa</th>
                 <th>Xoá</th>
+                <th>Chi tiết</th>
+                <th scope="col">
+                    <button id="btn" type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            data-bs-toggle="modal" data-bs-target="#deleteModals">Xoá nhiều
+                    </button>
+                </th>
             </tr>
-            <tr>
-
+            <tr th:each="customer, row : ${customerList}" class="text-center">
+                <td th:text="${row.count}"></td>
+                <td th:text="${customer.customerType.name}"></td>
+                <td th:text="${customer.name}"></td>
+                <td th:text="${customer.date_of_birth}"></td>
+                <td th:text="${customer.gender?'Nam':'Nữ'}"></td>
+                <td th:text="${customer.id_card}"></td>
+                <td th:text="${customer.phone_number}"></td>
+                <td th:text="${customer.email}"></td>
+                <td th:text="${customer.address}"></td>
+                <td class="text-center">
+                    <a th:href="@{/customer/edit(id=${customer.getId()})}">
+                        <button class="btn btn-primary">Sửa</button>
+                    </a>
+                </td>
+                <td class="text-center">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                            th:attr="onclick=|deleteBlog('${customer.getId()}','${customer.getName()}')|">Xoá
+                    </button>
+                </td>
+                <td class="text-center">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#detail"
+                            th:attr="onclick=|showDetail('${customer.getId()}', '${customer.getName()}',
+                             '${customer.customerType.getName()}','${customer.date_of_birth}',
+                             '${customer.phone_number}')|">Chi tiết
+                    </button>
+                </td>
+                <td class="text-center">
+                    <label>
+                        <input name="idDelete" class="form-check-input" type="checkbox" th:value="${customer.getId()}">
+                    </label>
+                </td>
             </tr>
-            <tr>
-
+            <tr th:if="${customerList.isEmpty()}">
+                <td colspan="13" class="text-center">Danh sách trống.</td>
             </tr>
         </table>
 
+        <div class="text-center">
+            <a th:href="@{/customer(page=${customerList.number - 1}, nameSearch=${nameSearch},
+                        typeSearch=${typeSearch}, emailSearch=${emailSearch})}"
+               th:if="${customerList.hasPrevious()}">
+                <button class="btn btn-primary">Trước</button>
+            </a>
 
+            <span th:text="${customerList.number + 1}"></span>/<span th:text="${customerList.totalPages}"></span>
 
+            <a th:href="@{/customer(page=${customerList.number + 1}, nameSearch=${nameSearch},
+                        typeSearch=${typeSearch}, emailSearch=${emailSearch})}"
+               th:if="${customerList.hasNext()}">
+                <button class="btn btn-primary">Sau</button>
+            </a>
+        </div>
 
         <!--Modal delete-->
         <div class="modal fade" id="deleteModal" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -54,9 +126,9 @@
                                 aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Bạn có muốn xoá blog <span id="nameBlogDelete"></span> không?
+                        Bạn có muốn xoá khách hàng <span id="nameBlogDelete"></span> không?
                     </div>
-                    <form action="/blog/delete" method="get">
+                    <form action="/customer/delete" method="get">
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng
                             </button>
@@ -125,10 +197,10 @@
                                 aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-<!--                        Bạn có muốn xoá blog có mã <span id="titleBlogDeletes"></span> không?-->
+                        <!--                        Bạn có muốn xoá blog có mã <span id="titleBlogDeletes"></span> không?-->
                         Bạn có muốn xoá những blog đã chọn không?
                     </div>
-                    <form action="/blog/multiDelete" method="get">
+                    <form action="/customer/multiDelete" method="get">
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng
                             </button>

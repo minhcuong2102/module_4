@@ -31,20 +31,20 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 7%">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto col-10">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/view/home.jsp">Home</a>
+<!--                <li class="nav-item active">-->
+<!--                    <a class="nav-link" href="/view/home.jsp">Home</a>-->
+<!--                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/employee}">Employee</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/employee">Employee</a>
+                    <a class="nav-link" th:href="@{/customer}">Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/customer">Customer</a>
+                    <a class="nav-link" th:href="@{/facility}">Facility</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/facility">Facility</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contract">Contract</a>
+                    <a class="nav-link" th:href="@{/contract}">Contract</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0 col-2">
@@ -55,7 +55,6 @@
     </nav>
 </div>
 <div th:fragment="sidebar">
-    <div class="col-2">
         <ul class="list-group vh-79 left-nav-scroll" style="height: 81%">
             <li class="list-group-item">Item 1</li>
             <li class="list-group-item">Item 2</li>
@@ -73,7 +72,6 @@
             <li class="list-group-item">Item 14</li>
             <li class="list-group-item">Item 15</li>
         </ul>
-    </div>
 </div>
 <div th:fragment="footer">
     <footer class="col-12 bg-light text-center">
