@@ -47,7 +47,7 @@ public class CustomerController {
         }
 
         model.addAttribute("nameSearch", nameSearch);
-        model.addAttribute("typeSearch", iCustomerTypeService.findById(typeSearch));
+//        model.addAttribute("typeSearch", iCustomerTypeService.findById(typeSearch));
         model.addAttribute("customerTypeList", iCustomerTypeService.findAll());
         model.addAttribute("customerList", customerList);
         return "/customer/list";

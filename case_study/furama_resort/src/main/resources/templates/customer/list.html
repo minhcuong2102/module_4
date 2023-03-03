@@ -27,17 +27,14 @@
         </div>
         <br>
         <form class="d-flex m-0" th:action="@{/customer}" method="get">
-            <input name="nameSearch" placeholder="nhập tên" th:value="${nameSearch}">
-            <label class="form-label">Loại khách</label>
-            <select th:if="${customerTypeList==0}" name="typeSearch">
-                <option th:each="customerType : ${customerTypeList}" th:value="${customerType.id}"
-                        th:text="${customerType.name}"></option>
+            <input name="nameSearch" placeholder="Nhập tên" th:value="${nameSearch}">
+            
+
+            <select name="typeSearch" th:if="${customerTypeList!=0}">
+                <option th:value="0">Tất cả</option>
+                <option th:each="customerType : ${customerTypeList}" th:value="${customerType.id}" th:text="${customerType.name}"></option>
             </select>
-            <select name="typeSearch" th:if="${typeSearch!=0}">
-                <option th:value="${typeSearch.id}" th:text="${typeSearch.name}"></option>
-                <option th:each="category : ${customerTypeList}" th:if="${category.id!=typeSearch}"
-                        th:value="${category.id}" th:text="${category.name}"></option>
-            </select>
+
             <button class="btn btn-outline-primary" type="submit">Tìm kiếm</button>
         </form>
         <br>
@@ -101,7 +98,7 @@
 
         <div class="text-center">
             <a th:href="@{/customer(page=${customerList.number - 1}, nameSearch=${nameSearch},
-                        typeSearch=${typeSearch}, emailSearch=${emailSearch})}"
+                        typeSearch=${typeSearch})}"
                th:if="${customerList.hasPrevious()}">
                 <button class="btn btn-primary">Trước</button>
             </a>
@@ -109,7 +106,7 @@
             <span th:text="${customerList.number + 1}"></span>/<span th:text="${customerList.totalPages}"></span>
 
             <a th:href="@{/customer(page=${customerList.number + 1}, nameSearch=${nameSearch},
-                        typeSearch=${typeSearch}, emailSearch=${emailSearch})}"
+                        typeSearch=${typeSearch})}"
                th:if="${customerList.hasNext()}">
                 <button class="btn btn-primary">Sau</button>
             </a>
