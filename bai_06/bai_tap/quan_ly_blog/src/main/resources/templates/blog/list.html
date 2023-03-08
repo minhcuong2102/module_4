@@ -33,7 +33,7 @@
             <select th:if="${categorySearch==0}" name="id">
                 <option th:each="category : ${categoryList}" th:value="${category.id}" th:text="${category.name}"></option>
             </select>
-            <select name="id" th:if="${categorySearch!=0}">
+            <select name="categorySearch" th:if="${categorySearch!=0}">
                 <option  th:value="${categorySearch.id}" th:text="${categorySearch.name}"></option>
                 <option th:each="category : ${categoryList}" th:if="${category.id!=categorySearch}" th:value="${category.id}" th:text="${category.name}"></option>
             </select>

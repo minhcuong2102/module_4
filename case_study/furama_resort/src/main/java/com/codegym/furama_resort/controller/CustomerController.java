@@ -38,7 +38,7 @@ public class CustomerController {
         Pageable pageable = PageRequest.of(page, 5, Sort.by("name").ascending());
         Page<Customer> customerList = null;
 
-        if (nameSearch.equals("") && typeSearch == 0) {
+        if (typeSearch == 0) {
             customerList = iCustomerService.findByNameContaining(nameSearch, pageable);
         } else if (nameSearch.equals("")) {
             customerList = iCustomerService.findByCustomer_type_id(typeSearch, pageable);
@@ -47,7 +47,7 @@ public class CustomerController {
         }
 
         model.addAttribute("nameSearch", nameSearch);
-//        model.addAttribute("typeSearch", iCustomerTypeService.findById(typeSearch));
+        model.addAttribute("typeSearch", typeSearch);
         model.addAttribute("customerTypeList", iCustomerTypeService.findAll());
         model.addAttribute("customerList", customerList);
         return "/customer/list";
@@ -72,7 +72,7 @@ public class CustomerController {
             customer = iCustomerService.findById(i);
             iCustomerService.remove(customer);
         }
-        return "redirect:/customer/list";
+        return "redirect:/customer";
     }
 
     public String dateCreate() {
@@ -91,10 +91,9 @@ public class CustomerController {
 
     @PostMapping("/create")
     public String save(@ModelAttribute Customer customer, RedirectAttributes redirectAttributes) {
-        customer.setDate_of_birth(dateCreate());
         iCustomerService.save(customer);
         redirectAttributes.addFlashAttribute("mess", "Đã thêm thành công");
-        return "redirect:/customer/list";
+        return "redirect:/customer";
     }
 
     @GetMapping("/delete")
@@ -102,7 +101,7 @@ public class CustomerController {
         Customer customer = iCustomerService.findById(id);
         iCustomerService.remove(customer);
         redirectAttributes.addFlashAttribute("mess", "Đã xoá thành công");
-        return "redirect:/customer/list";
+        return "redirect:/customer";
     }
 
     @GetMapping("/edit")
@@ -116,6 +115,6 @@ public class CustomerController {
     public String update(Customer blog, RedirectAttributes redirectAttributes) {
         iCustomerService.save(blog);
         redirectAttributes.addFlashAttribute("mess", "Chỉnh sửa thành công");
-        return "redirect:/customer/list";
+        return "redirect:/customer";
     }
 }

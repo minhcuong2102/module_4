@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Chỉnh sửa khách hàng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
 </head>
 <body>
+<div th:insert="layout::header"></div>
+<div th:insert="layout::navbar"></div>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-11 container-fluid">
+        <h1 class="text-center">Danh sách nhân viên</h1>
+        <a th:href="@{/customer}">
+            <button class="btn btn-primary">Quay về danh sách</button>
+        </a>
+        <form th:object="${customer}" th:action="@{/customer/update}" method="post">
+            <table class="table table-light">
+                <tr>
+                    <td class="form-label">Loại khách</td>
+                    <td>
+                        <select th:field="*{customerType}" th:placeholder="${customer.getCustomerType().getName()}" class="form-control" required>
+                            <option th:each="type : ${customerType}" th:value="${type.id}"
+                                    th:text="${type.name}"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-label">Tên khách hàng</td>
+                    <td><input th:field="*{name}" class="form-control" th:placeholder="${customer.getName()}"></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Ngày sinh</td>
+                    <td><input type="date" th:field="*{date_of_birth}" th:placeholder="${customer.getDate_of_birth()}" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-label">Giới tính</td>
+                    <td>
+                        <select th:field="*{gender}" class="form-control" th:placeholder="${customer.isGender()}">
+                            <option th:value="true" th:text="Nam"></option>
+                            <option th:value="false" th:text="Nữ"></option>
+                        </select>
+                    <td>
+                </tr>
+                <tr>
+                    <td class="form-label">Mã số</td>
+                    <td><input th:field="*{id_card}" th:placeholder="${customer.getId_card()}" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Số điện thoại</td>
+                    <td><input th:field="*{phone_number}" th:placeholder="${customer.getPhone_number()}" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Email</td>
+                    <td><input th:field="*{email}" th:placeholder="${customer.getEmail()}" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Địa chỉ</td>
+                    <td><input th:field="*{address}" th:placeholder="${customer.getAddress()}" class="form-control"></td>
+                </tr>
+            </table>
+            <button class="btn btn-success" style="margin-left: 45%" type="submit">Lưu</button>
+        </form>
 
+    </div>
+</div>
 </body>
 </html>

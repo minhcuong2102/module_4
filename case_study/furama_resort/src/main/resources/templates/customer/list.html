@@ -16,7 +16,7 @@
 <div class="row">
     <!--    <div th:insert="layout::sidebar" class="col-1"></div>-->
     <div class="col-12 container-fluid">
-        <h1 class="text-center">Danh sách nhân viên</h1>
+        <h1 class="text-center">Danh sách khách hàng</h1>
         <a th:href="@{/customer/create}">
             <button class="btn btn-primary">Thêm mới</button>
         </a>
@@ -28,11 +28,21 @@
         <br>
         <form class="d-flex m-0" th:action="@{/customer}" method="get">
             <input name="nameSearch" placeholder="Nhập tên" th:value="${nameSearch}">
-            
 
-            <select name="typeSearch" th:if="${customerTypeList!=0}">
+            <select name="typeSearch" th:if="${typeSearch==0}">
                 <option th:value="0">Tất cả</option>
-                <option th:each="customerType : ${customerTypeList}" th:value="${customerType.id}" th:text="${customerType.name}"></option>
+                <option th:each="customerType : ${customerTypeList}" th:value="${customerType.id}"
+                        th:text="${customerType.name}">
+                </option>
+            </select>
+            <select name="typeSearch" th:if="${typeSearch!=0}">
+                <option th:each="customerType : ${customerTypeList}" th:value="${customerType.id}"
+                        th:text="${customerType.name}" th:if="${typeSearch==customerType.id}">
+                </option>
+                <option th:each="customerType : ${customerTypeList}" th:value="${customerType.id}"
+                        th:text="${customerType.name}" th:if="${typeSearch!=customerType.id}">
+                </option>
+                <option th:value="0">Tất cả</option>
             </select>
 
             <button class="btn btn-outline-primary" type="submit">Tìm kiếm</button>

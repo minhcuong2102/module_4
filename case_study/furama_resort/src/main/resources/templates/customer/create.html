@@ -14,14 +14,60 @@
 <div th:insert="layout::header"></div>
 <div th:insert="layout::navbar"></div>
 <div class="row">
-    <div th:insert="layout::sidebar" class="col-1"></div>
+    <div class="col-1"></div>
     <div class="col-11 container-fluid">
         <h1 class="text-center">Danh sách nhân viên</h1>
         <a th:href="@{/customer}">
             <button class="btn btn-primary">Quay về danh sách</button>
         </a>
-
-
+        <form th:object="${customer}" th:action="@{/customer/create}" method="post">
+            <table class="table table-light">
+                <tr>
+                    <td class="form-label">Loại khách</td>
+                    <td>
+                        <select th:field="*{customerType}" class="form-control">
+                            <option th:each="type : ${customerType}" th:value="${type.id}"
+                                    th:text="${type.name}"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-label">Tên khách hàng</td>
+                    <td><input th:field="*{name}" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Ngày sinh</td>
+                    <td><input type="date" th:field="*{date_of_birth}" th:value="${dateCreate}" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-label">Giới tính</td>
+                    <td>
+                        <select th:field="*{gender}" class="form-control">
+                            <option th:value="true" th:text="Nam"></option>
+                            <option th:value="false" th:text="Nữ"></option>
+                        </select>
+                    <td>
+                </tr>
+                <tr>
+                    <td class="form-label">Mã số</td>
+                    <td><input th:field="*{id_card}" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Số điện thoại</td>
+                    <td><input th:field="*{phone_number}" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Email</td>
+                    <td><input th:field="*{email}" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Địa chỉ</td>
+                    <td><input th:field="*{address}" class="form-control"></td>
+                </tr>
+            </table>
+            <button class="btn btn-success" style="margin-left: 45%" type="submit">Lưu</button>
+        </form>
     </div>
 </div>
 </body>

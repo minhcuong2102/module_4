@@ -14,20 +14,39 @@
 <div th:insert="layout::header"></div>
 <div th:insert="layout::navbar"></div>
 <div class="row">
-    <div th:insert="layout::sidebar"></div>
-    <div class="col-10 container-fluid">
+    <!--    <div class="col-1"></div>-->
+    <div class="col-12 container-fluid">
         <h1 class="text-center">Danh sách nhân viên</h1>
-
+        <a th:href="@{/employee/create}">
+            <button class="btn btn-primary">Thêm mới</button>
+        </a>
+        <div class="text-danger">
+            <div th:if="${mess}">
+                <p th:text="${mess}"></p>
+            </div>
+        </div>
+        <button id="btn" type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                data-bs-toggle="modal" data-bs-target="#deleteModals">Xoá nhiều
+        </button>
         <table class="table table-striped">
-            <tr>
-
+            <tr class="text-center">
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Ngày sinh</th>
+                <th>Mã số</th>
+                <th>Lương</th>
+                <th>Số điện thoại</th>
+                <th>Email</th>
+                <th>Địa chỉ</th>
+                <th>Vị trí</th>
+                <th>Học vấn</th>
+                <th>Bộ phận</th>
+                <th>Tùy chọn</th>
             </tr>
-            <tr>
-
+            <tr class="text-center">
+                <td></td>
             </tr>
         </table>
-
-
 
 
         <!--Modal delete-->
@@ -41,9 +60,9 @@
                                 aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Bạn có muốn xoá blog <span id="nameBlogDelete"></span> không?
+                        Bạn có muốn xoá nhân viên <span id="nameBlogDelete"></span> không?
                     </div>
-                    <form action="/blog/delete" method="get">
+                    <form action="/employee/delete" method="get">
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng
                             </button>
@@ -112,7 +131,7 @@
                                 aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-<!--                        Bạn có muốn xoá blog có mã <span id="titleBlogDeletes"></span> không?-->
+                        <!--                        Bạn có muốn xoá blog có mã <span id="titleBlogDeletes"></span> không?-->
                         Bạn có muốn xoá những blog đã chọn không?
                     </div>
                     <form action="/blog/multiDelete" method="get">
