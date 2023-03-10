@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<a th:href="@{/cart}">
+    <button class="btn btn-primary">Xem giỏ hàng</button>
+</a>
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="text-center">Cửa hàng</h1>
+        <div class="col-8">
+            <div class="row">
+                <div class="col-3" th:each="product : ${productList}">
+                    <div class="card">
+                        <div>Mới</div>
+                        <a th:href="@{/detail/{id}(id=${product.id})}">
+                            <div><img th:src="@{${product.image}}" height="100%" class="card-img-top"
+                                      alt="Sản phẩm" src=""></div>
+                        </a>
+                        <div class="card-body">
+                            <p class="card-title" th:text="${product.name}"></p>
+                            <p class="card-text" th:text="${product.price}"></p>
+                            <a class="btn btn-primary" role="button" th:href="@{/add/__${product.id}__}">Mua</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" th:if="${historyProduct}">
+            <div class="card" style="width: 18rem;">
+                <img th:src="${historyProduct.image}" class="card-img-top p-5"
+                     width="100px" height="300px" alt="img" src="">
+                <div class="card-body">
+                    <p class="card-title" th:text="${historyProduct.name}"></p>
+                    <p class="card-text" th:text="${historyProduct.price}"></p>
+                </div>
+            </div>
+            <h4>Sản phẩm xem gần nhất</h4>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
