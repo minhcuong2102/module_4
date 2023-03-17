@@ -1,5 +1,8 @@
 package com.codegym.furama_resort.model.customer;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 
 @Entity
@@ -7,10 +10,13 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "customer_type_id", referencedColumnName = "id")
     private CustomerType customerType;
     private String name;
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
     private String date_of_birth;
     private boolean gender;
     private String id_card;

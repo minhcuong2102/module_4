@@ -1,6 +1,7 @@
 package com.codegym.furama_resort.model.employee;
 
 import com.codegym.furama_resort.model.customer.CustomerType;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 
@@ -10,6 +11,7 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
     private String date_of_birth;
     private String id_card;
     private double salary;

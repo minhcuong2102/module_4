@@ -1,5 +1,7 @@
 package com.codegym.furama_resort.model.customer;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -12,6 +14,7 @@ public class CustomerType {
     @Column(length = 45)
     private String name;
 
+    @JsonBackReference
     @OneToMany(mappedBy = "customerType")
     private Set<Customer> customerSet;
 

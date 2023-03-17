@@ -1,12 +1,18 @@
 package com.codegym.furama_resort.controller;
 
 import com.codegym.furama_resort.model.customer.Customer;
+import com.codegym.furama_resort.model.employee.Division;
+import com.codegym.furama_resort.model.employee.EducationDegree;
 import com.codegym.furama_resort.model.employee.Employee;
+import com.codegym.furama_resort.model.employee.Position;
 import com.codegym.furama_resort.service.employee.IDivisionService;
 import com.codegym.furama_resort.service.employee.IEducationDegreeService;
 import com.codegym.furama_resort.service.employee.IEmployeeService;
 import com.codegym.furama_resort.service.employee.IPositionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +20,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/employee")
@@ -31,11 +39,42 @@ public class EmployeeController {
     IPositionService iPositionService;
 
     @GetMapping("")
-    public String showList(Model model){
+    public String showList(Model model, @PageableDefault(value = 4) Pageable pageable,
+                           @RequestParam("nameSearch") Optional<String> nameSearch,
+                           @RequestParam("emailSearch") Optional<String> emailSearch,
+                           @RequestParam("divisionSearch") Optional<String> divisionSearch){
+        Page<Employee> employeeList;
+        String condition = "";
 
+        if (nameSearch.isPresent() || emailSearch.isPresent() || divisionSearch.isPresent()) {
+            employeeList = iEmployeeService.searchEmployee(nameSearch.get(), emailSearch.get(), divisionSearch.get(), pageable);
+            model.addAttribute("employeeList", employeeList);
+        }
 
-        model.addAttribute("employeeList");
-        return "/employee/list";
+        if (nameSearch.isPresent()) {
+            condition += "&nameSearch=" + nameSearch.get();
+            model.addAttribute("nameSearch", nameSearch.get());
+        }
+        if (emailSearch.isPresent()) {
+            condition += "&emailSearch=" + emailSearch.get();
+            model.addAttribute("emailSearch", emailSearch.get());
+        }
+        if (divisionSearch.isPresent()) {
+            condition += "&divisionSearch=" + divisionSearch.get();
+            model.addAttribute("divisionSearch", divisionSearch.get());
+        } else {
+            employeeList = iEmployeeService.findAll(pageable);
+            model.addAttribute("employeeList", employeeList);
+        }
+
+        List<Position> positionList = iPositionService.findAll();
+        List<EducationDegree> educationDegreeList = iEducationDegreeService.findAll();
+        List<Division> divisionList = iDivisionService.findAll();
+        model.addAttribute("positionList", positionList);
+        model.addAttribute("educationDegreeList", educationDegreeList);
+        model.addAttribute("divisionList", divisionList);
+        model.addAttribute("condition", condition);
+        return "employee/list";
     }
 
     public static String removeCharAt(String s, int pos) {
@@ -93,7 +132,7 @@ public class EmployeeController {
 
     @GetMapping("/edit")
     public String showEditForm(@RequestParam int id, Model model) {
-        model.addAttribute("employee", new Customer());
+        model.addAttribute("employee", new Employee());
         model.addAttribute("divisionList", iDivisionService.findAll());
         model.addAttribute("positionList", iPositionService.findAll());
         model.addAttribute("educationDegreeList", iEducationDegreeService.findAll());

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="51412bb5-5450-44ac-9c1f-f9b7c5938efa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/QuanLyDienThoaiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/test/java/com/example/quan_ly_dien_thoai/QuanLyDienThoaiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tao_hieu_ung_bang_jquery/tao_hieu_ung_bang_jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tao_hieu_ung_bang_jquery/tạo_hiệu_ứng_bằng_jquery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_01/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_01/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_05/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_05/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_07/thuc_hanh/spring-customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_07/thuc_hanh/spring-customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_09/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_09/thuc_hanh/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2MxNfOgXF6NgfPueIl772vN4VmS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MTHome" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51412bb5-5450-44ac-9c1f-f9b7c5938efa" name="Changes" comment="" />
+      <created>1678705376403</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678705376403</updated>
+      <workItem from="1678705377927" duration="434000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

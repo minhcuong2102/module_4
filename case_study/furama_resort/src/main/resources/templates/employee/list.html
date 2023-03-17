@@ -25,6 +25,18 @@
                 <p th:text="${mess}"></p>
             </div>
         </div>
+        <form class="d-flex m-0" th:action="@{/employee}" method="get">
+            <input class="me-2" name="nameSearch" placeholder="Tìm theo tên" th:value="${nameSearch}">
+            <input class="me-2" name="emailSearch" placeholder="Tìm theo email" th:value="${emailSearch}">
+            <select class="me-2" name="divisionSearch">
+                <option value="">Chọn</option>
+                <option th:each="division: ${divisionList}" th:value="${division.id}"
+                        th:text="${division.name}"
+                        th:selected="${division.id} == ${divisionSearch}">
+                </option>
+            </select>
+            <button class="btn btn-primary" type="submit">Tìm kiếm</button>
+        </form>
         <button id="btn" type="button" class="btn btn-secondary" data-bs-dismiss="modal"
                 data-bs-toggle="modal" data-bs-target="#deleteModals">Xoá nhiều
         </button>
@@ -43,8 +55,34 @@
                 <th>Bộ phận</th>
                 <th>Tùy chọn</th>
             </tr>
-            <tr class="text-center">
-                <td></td>
+            <tr class="text-center" th:each="employee, row : ${employeeList}">
+                <td th:text="${row.count}"></td>
+                <td th:text="${employee.name}"></td>
+                <td th:text="${employee.date_of_birth}"></td>
+                <td th:text="${employee.id_card}"></td>
+                <td th:text="${employee.salary}"></td>
+                <td th:text="${employee.phone_number}"></td>
+                <td th:text="${employee.email}"></td>
+                <td th:text="${employee.address}"></td>
+                <td th:text="${employee.positionId.name}"></td>
+                <td th:text="${employee.educationDegreeId.name}"></td>
+                <td th:text="${employee.divisionId.name}"></td>
+                <td>
+                    <a th:href="@{/employee/edit(id=${employee.getId()})}">
+                        <button class="btn btn-primary">Sửa</button>
+                    </a>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                            th:attr="onclick=|deleteBlog('${employee.getId()}','${employee.getName()}')|">Xoá
+                    </button>
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#detail"
+                            th:attr="onclick=|showDetail('${employee.getId()}', '${employee.getName()}',
+                             '${employee.positionId.getName()}','${employee.date_of_birth}',
+                             '${employee.phone_number}')|">Chi tiết
+                    </button>
+                    <label>
+                        <input name="idDelete" class="form-check-input" type="checkbox" th:value="${employee.getId()}">
+                    </label>
+                </td>
             </tr>
         </table>
 
@@ -62,7 +100,7 @@
                     <div class="modal-body">
                         Bạn có muốn xoá nhân viên <span id="nameBlogDelete"></span> không?
                     </div>
-                    <form action="/employee/delete" method="get">
+                    <form th:action="@{/employee/delete}" method="get">
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng
                             </button>
@@ -126,15 +164,15 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel1">Xoá Blog</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel1">Xoá nhân viên</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <!--                        Bạn có muốn xoá blog có mã <span id="titleBlogDeletes"></span> không?-->
-                        Bạn có muốn xoá những blog đã chọn không?
+                        Bạn có muốn xoá những nhân viên đã chọn không?
                     </div>
-                    <form action="/blog/multiDelete" method="get">
+                    <form th:action="@{/employee/multiDelete}" method="get">
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng
                             </button>
