@@ -5,6 +5,7 @@ import com.example.quan_ly_dien_thoai.repository.ISmartphoneRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -14,6 +15,11 @@ public class SmartphoneService implements ISmartphoneService{
 
     @Override
     public Iterable<Smartphone> findAll() {
+        return smartPhoneRepository.findAll();
+    }
+
+    @Override
+    public List<Smartphone> findAllSmartphone() {
         return smartPhoneRepository.findAll();
     }
 
