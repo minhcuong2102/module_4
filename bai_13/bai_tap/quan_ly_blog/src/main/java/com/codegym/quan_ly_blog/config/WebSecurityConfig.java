@@ -22,25 +22,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private DataSource dataSource;
 
-    //    @Bean
-//    public BCryptPasswordEncoder passwordEncoder() {
-//        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
-//        return bCryptPasswordEncoder;
-//    }
     AppConfig appConfig = new AppConfig();
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-
         // Sét đặt dịch vụ để tìm kiếm User trong Database.
         // Và sét đặt PasswordEncoder.
         auth.userDetailsService(userDetailsService).passwordEncoder(appConfig.passwordEncoder());
-
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-
         http.csrf().disable();
 
         // Các trang không yêu cầu login
@@ -48,11 +40,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         // Trang /userInfo yêu cầu phải login với vai trò ROLE_USER hoặc ROLE_ADMIN.
         // Nếu chưa login, nó sẽ redirect tới trang /login.
-        http.authorizeRequests().antMatchers("/blog").access("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')");
+        http.authorizeRequests().antMatchers("/blog/list").access("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')");
 
         // Trang chỉ dành cho ADMIN
-        http.authorizeRequests().antMatchers("/blog").access("hasRole('ROLE_ADMIN')");
-        http.authorizeRequests().antMatchers("/category").access("hasRole('ROLE_ADMIN')");
+        http.authorizeRequests().antMatchers("/blog/list").access("hasRole('ROLE_ADMIN')");
+        http.authorizeRequests().antMatchers("/category/list").access("hasRole('ROLE_ADMIN')");
+        http.authorizeRequests().antMatchers("/userInfo").access("hasRole('ROLE_ADMIN')");
+        http.authorizeRequests().antMatchers("/admin").access("hasRole('ROLE_ADMIN')");
 
         // Khi người dùng đã login, với vai trò XX.
         // Nhưng truy cập vào trang yêu cầu vai trò YY,
@@ -69,13 +63,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .usernameParameter("username")//
                 .passwordParameter("password")
                 // Cấu hình cho Logout Page.
-                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/logout");
+                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/logoutSuccessful");
 
         // Cấu hình Remember Me.
         http.authorizeRequests().and() //
                 .rememberMe().tokenRepository(this.persistentTokenRepository()) //
                 .tokenValiditySeconds(24 * 60 * 60); // 24h
-
     }
 
     @Bean

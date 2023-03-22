@@ -25,10 +25,21 @@ public class MainController {
         return "loginPage";
     }
 
-    @RequestMapping(value = "/logout", method = RequestMethod.GET)
+    @RequestMapping(value = "/logoutSuccessful", method = RequestMethod.GET)
     public String logoutSuccessfulPage(Model model) {
         model.addAttribute("title", "Logout");
         return "logoutSuccessfulPage";
+    }
+
+    @RequestMapping(value = "/admin", method = RequestMethod.GET)
+    public String adminPage(Model model, Principal principal) {
+
+        User loginedUser = (User) ((Authentication) principal).getPrincipal();
+
+        String userInfo = WebUtils.toString(loginedUser);
+        model.addAttribute("userInfo", userInfo);
+
+        return "adminPage";
     }
 
     @RequestMapping(value = "/userInfo", method = RequestMethod.GET)
