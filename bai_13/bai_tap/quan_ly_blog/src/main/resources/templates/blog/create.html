@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm mới</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-10">
+        <h1 class="text-center">Thêm mới blog</h1>
+        <a href="/blog/list">
+            <button class="btn btn-primary">Quay về danh sách</button>
+        </a>
+        <form th:object="${blog}" th:action="@{/blog/create}" method="post">
+            <table class="table table-light">
+                <tr>
+                    <td><label for="id" class="form-label">Mã blog</label></td>
+                    <td><input th:field="*{id}" class="form-control" id="id"></td>
+                </tr>
+                <tr>
+                    <td><label for="name" class="form-label">Tiêu đề</label></td>
+                    <td><input th:field="*{title}" class="form-control" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="category" class="form-label">Danh mục</label></td>
+                    <td>
+                        <select th:field="*{category}" id="category">
+                            <option th:each="cate : ${categoryList}" th:value="${cate.id}" th:text="${cate.name}"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="price" class="form-label">Thời gian đăng</label></td>
+                    <td><input type="date" th:field="*{time}" class="form-control" id="price"></td>
+                </tr>
+                <tr>
+                    <td><label for="description" class="form-label">Nội dung</label></td>
+                    <td><input th:field="*{status}" class="form-control" id="description"></td>
+                </tr>
+            </table>
+            <button class="btn btn-success" style="margin-left: 45%" type="submit">Lưu</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
