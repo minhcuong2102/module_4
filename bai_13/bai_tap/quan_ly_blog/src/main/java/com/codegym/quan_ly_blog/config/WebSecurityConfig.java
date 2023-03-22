@@ -1,5 +1,6 @@
 package com.codegym.quan_ly_blog.config;
 
+import com.codegym.quan_ly_blog.service.UserDetailServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +17,7 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
-    private MyUserDetailServiceImpl userDetailsService;
+    private UserDetailServiceImpl userDetailsService;
 
     @Autowired
     private DataSource dataSource;
